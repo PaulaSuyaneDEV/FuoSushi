@@ -15,7 +15,6 @@ export default function ProductList() {
 
   return (
     <div className="container mx-auto px-4 py-6">
-      {/* Botões de filtro */}
       <div className="flex flex-wrap justify-center gap-4 mb-8">
         <button
           className={`px-4 py-2 rounded-full border transition ${
@@ -49,7 +48,6 @@ export default function ProductList() {
         </button>
       </div>
 
-      {/* Lista de produtos */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
         {filteredProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
